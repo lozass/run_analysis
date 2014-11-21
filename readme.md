@@ -12,7 +12,24 @@ This script reads the Samsung Data Set and executes:
 It requires the following R packages/libraries
  library(gdata)
   library(plyr)
+  library(dplyr)
   library(reshape2)
   
-It requires that the Samsung data set is unzipped in the same directory as the run_analysis.R script file
-It will create an output file names tidyAveragesDataset.txt in the same directory
+It requires that the Samsung data set is unzipped in the same directory as the run_analysis.R script file. the list of files and their location (subdirectory) is as follows
+
+## files that are required in the working directory
+##    features.txt
+##    activity_labels.txt
+## files that are requires in the "test" subdirectory
+##    test/X_test.txt
+##    test/subject_test.txt
+##    test/y_test.txt
+## files that are required in the "train" subdirectory
+##    train/X_train.txt
+##    train/subject_train.txt
+##    train/y_train.txt
+
+
+## It will create an output file names tidyAveragesDataset.txt in the same directory
+## files that are created by this script in the working directory
+##    tidyAveragesDataset.txt
