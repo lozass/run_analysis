@@ -1,12 +1,31 @@
 ## run_analysis.R
-## this script does:
+## 
+##  this script does:
 ##     Reads test and train data sets from the Samsung trial
 ##     provides descriptive column names to better describe the features(columns)
 ##     adds subject and activity information to each observation  
 ##     merges test and trial into one single data set 
 ##     From this data set creates a second (finaldata) datasetwith averages for each variable for each activity and each subject.
+##
+## files that are required in the working directory
+##    features.txt
+##    activity_labels.txt
+## files that are requires in the "test" subdirectory
+##    test/X_test.txt
+##    test/subject_test.txt
+##    test/y_test.txt
+## files that are required in the "train" subdirectory
+##    train/X_train.txt
+##    train/subject_train.txt
+##    train/y_train.txt
+##
+## files that are created by this script in the working directory
+##    tidyAveragesDataset.txt
+    
+
   library(gdata)
   library(plyr)
+  library(dplyr)
   library(reshape2)
   ## read the names of the features (561 features)
   features <- read.csv("features.txt", sep=" ", header=F)
