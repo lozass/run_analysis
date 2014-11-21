@@ -1,4 +1,4 @@
-run_analysis.R Raeadme file
+run_analysis.R Readme file
 
 This script reads the Samsung Data Set and executes:
 
@@ -7,7 +7,8 @@ This script reads the Samsung Data Set and executes:
      adds subject and activity information to each observation  
      merges test and trial into one single data set 
      From this data set creates a second dataset with averages for each variable for each activity and each subject.
-	 This second dataset is named tidyAveragesDataset.txt
+
+    This output dataset is named tidyAveragesDataset.txt
 
 It requires the following R packages/libraries
  library(gdata)
@@ -15,6 +16,11 @@ It requires the following R packages/libraries
   library(dplyr)
   library(reshape2)
   
+the source of the Samsung data for the project can be downloaded here:
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+
 It requires that the Samsung data set is unzipped in the same directory as the run_analysis.R script file. the list of files and their location (subdirectory) is as follows
 
 ## files that are required in the working directory
